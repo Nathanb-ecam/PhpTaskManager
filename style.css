@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+
+.container{
+    width: 100%;
+    height: 250px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background:lightblue;
+    min-height:200px;
+}
+.empty h2{
+    margin: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.empty a{
+    font-size: 0.7em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid grey;
+    box-shadow: 2px 1px;
+    background: lightblue;
+}
+header h1{
+    margin: 10px;
+    
+}
+/* STYLING THE FORM */
+.form-container{
+    margin: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+}
+.form{
+    background:lightblue;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:1px solid grey;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    position: relative;
+}
+.form .label-inputs{
+    width: 65%;
+    margin:5px auto;
+    padding:5px;
+    
+    
+}
+.form h2{
+    position: absolute;
+    width: 100%;
+    background:blue;
+    color: lightblue;
+    border-bottom: 1px solid white;
+    top: 0;
+}
+
+.form .btn{
+    width: 65%;
+}
+.main{
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:50px;
+}
+
+/* For styling the list of tasks  */
+.main .content-table {
+    border-collapse: collapse;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0 ;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+.main .content-table thead tr{
+    background: blue;/*ICI*/ 
+    text-align: left;
+    font-weight: bold;
+    color:white;
+}
+.main .content-table td,.main .content-table th{
+    padding: 12px 15px;
+}
+.main .content-table tbody tr{
+    border-bottom: 1px solid lightgrey;
+}
+.main .content-table tbody tr:nth-child(even){
+    background: #f3f3f3;
+}
+.main .content-table tbody tr:last-child{
+    border-bottom: 2px solid blue;/*ICI*/ 
+}
+.main .content-table tbody tr:hover{
+    color:blue;/*ICI*/ 
+    
+}
+.main .content-table tbody tr a {
+    background:lightblue;
+    color: white;
+    text-decoration: none;
+    margin: 3px 5px;
+    padding: 3px 5px;
+    text-transform: uppercase;
+}
+.main .content-table tbody tr a:hover {
+    background: blue;
+    color:lightblue;
+}
+
+
+
+
+.total-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(122, 153, 163);
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+.btn-placer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.btn{
+    text-decoration: none;
+    background: blue;
+    text-transform: uppercase;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+
+}
+.btn:hover{
+    background: rgb(43, 43, 133);
+}
